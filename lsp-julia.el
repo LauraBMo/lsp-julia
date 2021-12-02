@@ -252,8 +252,8 @@ body."
   "Get the (Julia) project root directory of the current file."
   (concat "\""
           (expand-file-name
-           (or (locate-dominating-file default-directory "Project.toml")
-               (locate-dominating-file default-directory "JuliaProject.toml")
+           (or (locate-dominating-file buffer-file-name "Project.toml")
+               (locate-dominating-file buffer-file-name "JuliaProject.toml")
                lsp-julia-default-environment))
           "\""))
 
