@@ -10,13 +10,13 @@ For information on the features =lsp-mode= provides see their [[https://github.c
 ** Installation
 *** Installing the Julia Language Server
 **** Included Language Server
-`lsp-julia` installs `LanguageServer.jl` by default.
+~lsp-julia~ installs ~LanguageServer.jl~ by default.
 
 **** Change Language Server version
-By default the newest Version of `LanguageServer.jl` is installed. To Change the
+By default the newest Version of ~LanguageServer.jl~ is installed. To Change the
 version, open Julia and initiate the Environment in the subdirectory
-`languageserver` from the installation directory of `lsp-julia`. Then use
-Julia's `Pkg` to change the installed version.
+~languageserver~ from the installation directory of ~lsp-julia~. Then use
+Julia's ~Pkg~ to change the installed version.
 
 **** Using a Compiled LanguageServer.jl Image
 
@@ -28,9 +28,9 @@ Add the following to you config:
   ;; (require 'lsp-julia) must come after this!
 #+END_SRC
 
-Additionally because JIT compilation of LanguageServer.jl can cause a long delay
+Additionally because JIT compilation of ~LanguageServer.jl~ can cause a long delay
 which may cause issues with lsp-mode, I recommend using [[https://github.com/JuliaLang/PackageCompiler.jl][PackageCompiler.jl]] to
-AOT compile LanguageServer.jl into your julia image. Something like:
+AOT compile ~LanguageServer.jl~ into your julia image. Something like:
 
 #+BEGIN_EXAMPLE julia
   julia> Pkg.add("PackageCompiler")
@@ -38,7 +38,7 @@ AOT compile LanguageServer.jl into your julia image. Something like:
   julia> create_sysimage(:LanguageServer, sysimage_path="/path/to/languageserver.so")
 #+END_EXAMPLE
 
-See the documentation on PackageCompiler.jl for further usage details.
+See the documentation on ~PackageCompiler.jl~ for further usage details.
 
 *** Installing =lsp-julia=
 **** quelpa
