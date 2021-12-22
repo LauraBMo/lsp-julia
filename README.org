@@ -10,23 +10,18 @@ For information on the features =lsp-mode= provides see their [[https://github.c
 ** Installation
 *** Installing the Julia Language Server
 **** Included Language Server
-`lsp-julia` includes a [[https://github.com/non-Jedi/lsp-julia/issues]][working]
-Language Server using Git submodules by default.
-To initialize it, execute the following Git command in the directory of this repository:
-#+BEGIN_SRC shell
-    git submodule update --init --recursive
-#+END_SRC
+`lsp-julia` installs `LanguageServer.jl` by default.
 
-**** Manual Installation
-Otherwise, if you'd rather install the Language Server yourself, open a Julia REPL and install LanguageServer.jl.
+**** Change Language Server version
+By default the newest Version of `LanguageServer.jl` is installed. To Change the
+version, open Julia and initiate the Environment in the subdirectory
+`languageserver` from the installation directory of `lsp-julia`. Then use
+Julia's `Pkg` to change the installed version.
 
-#+BEGIN_EXAMPLE julia
-    julia> Pkg.add("LanguageServer")
-#+END_EXAMPLE
+**** Using a Compiled LanguageServer.jl Image
 
-The included server is used by default. To use the manually installed one, you
-need to also add the following to your init.el:
-
+Add the following to you config:
+     
 #+BEGIN_SRC emacs-lisp
   (setq lsp-julia-package-dir nil)
   (setq lsp-julia-flags `("-J/path/to/languageserver.so"))
@@ -52,14 +47,14 @@ about getting this added to melpa soon enough.
 
 #+BEGIN_SRC emacs-lisp
   (quelpa '(lsp-julia :fetcher github
-                      :repo "non-Jedi/lsp-julia"
+                      :repo "gdkrmr/lsp-julia"
                       :files (:defaults "languageserver")))
 #+END_SRC
 **** use-package
 #+BEGIN_SRC emacs-lisp
 (use-package lsp-julia
   :config
-  (setq lsp-julia-default-environment "~/.julia/environments/v1.5"))
+  (setq lsp-julia-default-environment "~/.julia/environments/v1.7"))
 #+END_SRC
 
 *** Using =lsp-julia= with a julia major mode

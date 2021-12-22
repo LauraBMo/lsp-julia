@@ -5,13 +5,12 @@
 ;; Author: Martin Wolke <vibhavp@gmail.com>
 ;;         Adam Beckmeyer <adam_git@thebeckmeyers.xyz>
 ;;         Guido Kraemer <gdkrmr@users.noreply.github.com>
-;; Maintainer: Adam Beckmeyer <adam_git@thebeckmeyers.xyz>
-;;             Guido Kraemer <gdkrmr@users.noreply.github.com>
+;; Maintainer: Guido Kraemer <gdkrmr@users.noreply.github.com>
 ;; Keywords: languages, tools
 ;; Version: 0.6.0
 ;; Package-Requires: ((emacs "25.1") (lsp-mode "6.3") (julia-mode "0.3"))
 ;; Keywords: languages, tools
-;; URL: https://github.com/non-Jedi/lsp-julia
+;; URL: https://github.com/gdkrmr/lsp-julia
 
 ;;; License:
 
