@@ -1,3 +1,5 @@
+[[https://melpa.org/#/lsp-julia][file:https://melpa.org/packages/lsp-julia-badge.svg]]
+
 * lsp-julia
 
 Julia support for the [[https://github.com/emacs-lsp/lsp-mode][=lsp-mode=]] package using the [[https://github.com/JuliaEditorSupport/LanguageServer.jl][LanguageServer.jl]] package.
