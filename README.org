@@ -1,4 +1,5 @@
 [[https://melpa.org/#/lsp-julia][file:https://melpa.org/packages/lsp-julia-badge.svg]]
+[[https://stable.melpa.org/#/lsp-julia][file:https://stable.melpa.org/packages/lsp-julia-badge.svg]]
 
 * lsp-julia
 
